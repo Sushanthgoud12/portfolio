@@ -1,0 +1,55 @@
+function scrolltop() {
+    let a = window.document;
+    a = location.href = '#home';
+}
+
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slider img');
+const slideIndicatorsContainer = document.querySelector('.slide-indicators');
+
+function showSlide(n) {
+    slideIndex = n;
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } else if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex].style.display = 'block';
+
+    // Update slide indicators
+    const slideIndicators = document.querySelectorAll('.slide-indicator');
+    slideIndicators.forEach((indicator, index) => {
+        if (index === slideIndex) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+}
+
+slides.forEach((slide, index) => {
+    const indicator = document.createElement('div');
+    indicator.classList.add('slide-indicator');
+    indicator.addEventListener('click', () => {
+        showSlide(index);
+    });
+    slideIndicatorsContainer.appendChild(indicator);
+});
+
+function nextSlide() {
+    showSlide(slideIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(slideIndex - 1);
+}
+
+function autoSlide() {
+    nextSlide();
+    setTimeout(autoSlide, 3000); // Change slide every 3 seconds (adjust as needed)
+}
+
+autoSlide();

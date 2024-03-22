@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sushanth - Frontend Web Developer </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Sushanth</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home</a></li>
+                <li><a href="#about" class="t-white roboto">About Me</a></li>
+                <li><a href="#skills" class="t-white roboto">Skills</a></li>
+                <li><a href="#projects" class="t-white roboto">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bottom Navigator -->
+    <section id="bottom">
+        <div class="bottom-nav flex s-center items-center">
+            <ul class="flex s-around items-center">
+                <a href="#home">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-house"></i></li>
+                </a>
+                <a href="#about">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-user"></i></li>
+                </a>
+                <a href="#skills">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-code"></i></li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Sushanth</h1>
+                <h4 class="poppinss">Frontend Web Developer</h4>
+                <a href="https://s3-ap-south-1.amazonaws.com/nkb-backend-ccbp-media-static/ccbp_prod/media/resume_generated/SUSHANTH_2024-02-12-191401.pdf" target="_blank"><button class="btn poppins">Resume</button></a>
+                <a class="btn live poppins" id="hireme" href="http://www.linkedin.com/in/sushantht" target="_blank">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <!-- Here in src replace the given link with your image link -->
+                <img class="myImg" src="https://media.licdn.com/dms/image/D5603AQE2uueRw5p0ng/profile-displayphoto-shrink_800_800/0/1699104671001?e=2147483647&v=beta&t=A7UMhhAcTXGzgTPwLIvlIKa-xwrDjYQdhzmX7h1x6Dg" alt="none" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="linkdin_profile.jpeg" alt="" style="width: 50%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Sushanth</h1>
+                    <p class="t-white poppins">I am a Frontend Web Developer looking for
+                        an opportunity in Web Development. <br>
+                        Who is committed to clean, efficient code and staying current with industry trends. And dedicated to crafting exceptional user experiences.
+                        Whether it's building responsive layouts or adding that extra touch of interactivity.</p>
+                    <a class="btn live poppins" id="hireme" href="http://www.linkedin.com/in/sushantht" target="_blank">More About Sushanth</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class=" skills-left flex s-center items-center">
+                <img src="/Images/skills.png" alt="">
+            </div>
+
+            <div class="skills-right flex items-center">
+                <div class="skillss-container">
+                    <div class="sql bar p-relative"><span class="bar-content left t-white">SQL</span><span class="bar-content right-skills t-white">90%</span></div>
+                    <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span class="bar-content right-skills t-white">90%</span></div>
+                    <div class="python bar p-relative"><span class="bar-content left t-white">PYTHON</span><span class="bar-content right-skills t-white">80%</span></div>
+                    <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span class="bar-content right-skills t-white">80%</span></div>
+                    <div class="bootstrap bar p-relative"><span class="bar-content left t-white">Bootstrap</span><span class="bar-content right-skills t-white">80%</span></div>
+                    <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span class="bar-content right-skills t-white">75%</span></div>
+                    <div class="Nodejs bar p-relative"><span class="bar-content left t-white">NodeJs</span><span class="bar-content right-skills t-white">60%</span></div>
+                    <div class="reactjs bar p-relative"><span class="bar-content left t-white">ReactJs</span><span class="bar-content right-skills t-white">45%</span></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-one">
+                    <img class="project-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="">
+                </div>
+                <h1 class="t-white poppins">Wikipedia Search Application</h1>
+                <p class="t-white poppins"> A wikipedia search application using HTML, CSS and JavaScript. Fetch the wikipedia from the
+                    api.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://sushanth03wiki.ccbp.tech" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-one">
+                    <img class="project-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" alt="">
+                </div>
+                <h1 class="t-white poppins">Food Munch</h1>
+                <p class="t-white poppins">A simple FoodMunch page using HTML and CSS. This webiste
+                    helps users search for restaurants, order food, and get it delivered to their doorstep.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://sushanth01fdmch.ccbp.tech/" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-two">
+                    <img class="project-image" src="https://w7.pngwing.com/pngs/670/265/png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon-thumbnail.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">TodoList-Application</h1>
+                <p class="t-white poppins">A simple Todo list application using HTML and CSS.To-Do list is a tool that helps user organise their daily tasks</p>
+                <div class="buttons flex s-around">
+                    <a href="https://sushanth02todos.ccbp.tech/" target="_blank" class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-three">
+                    <img class="project-image" src="https://cdn.jim-nielsen.com/ios/512/calculator-2017-10-10.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Simple Calculator</h1>
+                <p class="t-white poppins">A simple calculator using HTML, CSS and JS.It is used to perform arithematic calculations</p>
+                <div class="buttons flex s-around">
+                    <a href="https://sushanth04calc.ccbp.tech/" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div id="certifications">
+            <h1 class=" t-center my-2 t-white f-2">Certifications</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="https://media-content.ccbp.in/certificates/share/LQLYMSPHIN.png" alt="Image 1">
+                    <img src="https://media-content.ccbp.in/certificates/share/JRUABKJIFB.png" alt="Image 2">
+                    <img src="https://media-content.ccbp.in/certificates/share/WLUITJORWN.png" alt="Image 3">
+                    <img src="https://media-content.ccbp.in/certificates/share/MINITSDFOW.png" alt="Image 1">
+                    <img src="https://media-content.ccbp.in/certificates/share/CADZLMIBGF.png" alt="Image 2">
+                    <img src="https://media-content.ccbp.in/certificates/share/KRCYMUWTXF.png" alt="Image 3">
+                    <img src="https://media-content.ccbp.in/certificates/share/GJNJDGNSDO.png" alt="Image 3">
+                </div>
+                <div class="slide-indicators"></div>
+            </div>
+
+            <script src="script.js"></script>
+
+            <script src="script.js"></script>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <h1 class=" t-center my-2 t-white f-2">Contact Form</h1>
+    <div class="visme_d" data-title="Contact" data-url="pvmxnv0g-untitled-project" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="40089"></div>
+    <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="http://www.linkedin.com/in/sushantht" target="_blank">
+                <li><i class="linkdin-icon fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/Sushanthgoud12" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/sushanthgoud_?igsh=MWk3c3NoNHk5OXUyeg==" target="_blank">
+                <li><i class=" insta fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+
+    </footer>
+
+    <div id="scroll-top" onclick="scrolltop()">
+        <span><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
+</body>
+
+
+</html>
